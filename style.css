@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     display: flex;
     list-style: none;
     gap: 10px;
-    text-align: center;
+    align-items: center;
 }
 
 .navbar__about a {
@@ -59,6 +59,7 @@ body::-webkit-scrollbar {
     bottom: 0;
     content: "";
     display: flex;
+    align-items: center;
     height: 4px;
     left: 0;
     background: #fff;
@@ -70,6 +71,21 @@ body::-webkit-scrollbar {
     width: 100%;
     left: 0;
 }
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
 
 .hero {
     background-color: black;
@@ -214,5 +230,6 @@ body::-webkit-scrollbar {
     .hero__img img {
         display: none;
     }
+    
 }
 

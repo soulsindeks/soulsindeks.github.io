@@ -19,3 +19,14 @@ function scrollToTop() {
 
 toTop.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+
+let hamburger = document.querySelector(".hamburger")
+let navbarAbout = document.querySelector(".navbar__about")
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active")
+    navbarAbout.classList.toggle("active")
+}
