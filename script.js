@@ -29,4 +29,5 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active")
     navbarAbout.classList.toggle("active")
+    navbarAbout.classList.toggle("menu__open")
 }
