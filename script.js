@@ -23,11 +23,19 @@ document.addEventListener("scroll", handleScroll);
 
 let hamburger = document.querySelector(".hamburger")
 let navbarAbout = document.querySelector(".navbar__about")
+let navbar = document.querySelector(".navbar")
+
 
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active")
     navbarAbout.classList.toggle("active")
-    navbarAbout.classList.toggle("menu__open")
 }
+
+function toggleMenu() {
+    let body = document.body
+    body.classList.toggle('body__noscroll')
+}
+
+

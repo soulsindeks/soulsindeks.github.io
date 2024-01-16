@@ -10,6 +10,10 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+body.disable-scroll {
+    overflow: hidden;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -37,7 +41,6 @@ body::-webkit-scrollbar {
     font-size: 23px;
     text-decoration: none;
     color: white;
-    padding-left: 15px;
 }
 
 .navbar__about {
@@ -94,14 +97,13 @@ body::-webkit-scrollbar {
     padding-top: 180px;
     padding-bottom: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
 .hero__about {
     width: 100%;
     max-width: 600px;
-    padding-left: 15px;
 }
 
 .hero__about h1 {
@@ -232,6 +234,11 @@ body::-webkit-scrollbar {
         display: none;
     }
 
+
+    .body__noscroll {
+        overflow: hidden;
+    }
+
     .navbar {
         justify-content: space-between;
         z-index: 99;
@@ -259,12 +266,10 @@ body::-webkit-scrollbar {
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
-        
     }
 
     .navbar__about.active {
         left: 0;
-        
     }
 
     .navbar__item {
