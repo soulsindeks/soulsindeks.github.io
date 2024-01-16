@@ -30,9 +30,10 @@ body::-webkit-scrollbar {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: black;
     padding: 20px;
+    padding-left: ;
     align-items: center;
 }
 
@@ -41,6 +42,7 @@ body::-webkit-scrollbar {
     font-size: 23px;
     text-decoration: none;
     color: white;
+    padding-left: 120px;
 }
 
 .navbar__about {
@@ -48,12 +50,14 @@ body::-webkit-scrollbar {
     list-style: none;
     gap: 10px;
     align-items: center;
+    padding-right: 120px;
 }
 
 .navbar__about a {
     text-decoration: none;
     color: white;
     letter-spacing: 2px;
+    gap: 10px
 }
 
 .navbar__about a::after {
@@ -97,13 +101,14 @@ body::-webkit-scrollbar {
     padding-top: 180px;
     padding-bottom: 180px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 
 .hero__about {
     width: 100%;
     max-width: 600px;
+    padding-left: 120px
 }
 
 .hero__about h1 {
@@ -126,6 +131,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     width: 100%;
     max-width: 400px;
+    padding-right: 120px;
 }
 
 .hero__button {
@@ -229,6 +235,12 @@ body::-webkit-scrollbar {
     transform: translateY(0)
 }
 
+@media only screen and (max-width: 1181px) {
+    .hero__img img {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .hero__img img {
         display: none;
@@ -266,6 +278,7 @@ body::-webkit-scrollbar {
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
+        padding-right: 0;
     }
 
     .navbar__about.active {
@@ -275,6 +288,10 @@ body::-webkit-scrollbar {
     .navbar__item {
         margin-top: 120px;
         
+    }
+
+    .hero__about {
+        padding-left: 10px;
     }
 
     
