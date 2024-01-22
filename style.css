@@ -178,7 +178,7 @@ body::-webkit-scrollbar {
 .content {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 80px;
 }
 
@@ -189,7 +189,7 @@ body::-webkit-scrollbar {
 
 .content__img {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
 }
