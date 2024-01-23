@@ -376,17 +376,92 @@ body::-webkit-scrollbar {
         padding-left: 10px;
     }
 
-    
     .hamburger {
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #000;/* Change left to right */
+        box-sizing: border-box;
+        height: 36px;
+        cursor: pointer;
+        z-index: 2;
+        
+        svg {
+          stroke: #fff;
+          transition: .2s;
+          
+          g {
+            &:first-child {
+              opacity: 1;
+              transition: opacity 0s .2s;
+              
+              line {
+                transition: transform .2s .2s;
+                transform: translateY(0px);
+              }
+            }
+            
+            &:last-child {
+              opacity: 0;
+              transition: opacity 0s .2s;
+              
+              line {
+                transition: transform .2s;
+                transform: rotate(0deg);
+                transform-origin: center;
+              }
+            }
+          }
+        }
+        
+        &.-menu-open svg {
+            stroke: #fff;
+          g {
+            &:first-child {
+              opacity: 0;
+              
+              line {
+                transition: transform .2s;
+                
+                &:first-child {
+                  transform: translateY(7px);
+                }
+                
+                &:last-child {
+                  transform: translateY(-7px);
+                }
+              }
+            }
+            
+            &:last-child {
+              opacity: 1;
+              
+              line {
+                transition: transform .2s .2s;
+      
+                &:first-child {
+                  transform: rotate(45deg);
+                }
+                
+                &:last-child {
+                  transform: rotate(-45deg);
+                }
+              }
+            }
+          }  
+        }
+      }
+    /* .hamburger {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
         cursor: pointer;
         z-index: 99;
 
-    }
+    } */
 
-    .hamburger.active .bar:nth-child(2) {
+    /* .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
@@ -396,6 +471,6 @@ body::-webkit-scrollbar {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
+    } */
 }
 

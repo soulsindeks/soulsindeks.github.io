@@ -21,7 +21,7 @@ toTop.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
 
 
-let hamburger = document.querySelector(".hamburger")
+const hamburger = document.querySelector(".hamburger")
 let navbarAbout = document.querySelector(".navbar__about")
 let navbar = document.querySelector(".navbar")
 
@@ -29,7 +29,7 @@ let navbar = document.querySelector(".navbar")
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active")
+    hamburger.classList.toggle("-menu-open")
     navbarAbout.classList.toggle("active")
 }
 
