@@ -40,23 +40,23 @@ body::-webkit-scrollbar {
 .navbar__logo a {
     text-decoration: none;
     color: white;
-    font-size: 23px;
+    font-size: 30px;
     padding-left: 120px;
 }
 
 .navbar__about {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
     padding-right: 120px;
 }
 
 .navbar__about a {
+    font-size: 20px;
     text-decoration: none;
     color: white;
     letter-spacing: 2px;
-    gap: 10px
 }
 
 .navbar__about a::after {
