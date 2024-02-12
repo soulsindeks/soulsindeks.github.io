@@ -369,7 +369,6 @@ body::-webkit-scrollbar {
     }
 
     .navbar__item a{
-        padding: 10px;
         font-size: 24px;
         color: black;
     }
@@ -461,6 +460,25 @@ body::-webkit-scrollbar {
           }  
         }
       }
+
+      .navbar__about a::after {
+        background-color: black;
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: flex;
+        align-items: center;
+        height: 4px;
+        left: 0;
+        background: black;
+        transition: width 0.3s ease 0s, right 0.3s ease 0s;
+        width: 0;
+    }
+    
+    .navbar__about a:hover::after {
+        width: 100%;
+        left: 0;
+    }
     /* .hamburger {
         display: flex;
         justify-content: flex-end;
