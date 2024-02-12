@@ -31,6 +31,13 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("-menu-open")
     navbarAbout.classList.toggle("active")
+    let svg = document.querySelector(".svgClass")
+
+    if (navbarAbout.classList.contains("active")) {
+        svg.classList.add("svg2")
+    } else {
+        navbar.classList.remove("active")
+    }
 }
 
 function toggleMenu() {
