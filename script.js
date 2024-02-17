@@ -1,7 +1,8 @@
-const hamburger = document.querySelector(".hamburger")
+let hamburger = document.querySelector(".hamburger")
 let navbarAbout = document.querySelector(".navbar__about")
 let navbar = document.querySelector(".navbar")
 let navbarItem = document.querySelectorAll(".navbar__item")
+let links = document.querySelectorAll("a")
 let toTop = document.querySelector(".toTop");
 let rootElement = document.documentElement;
 
@@ -39,9 +40,22 @@ function mobileMenu() {
     }
 }
 
-function toggleMenu() {
-    let body = document.body
-    body.classList.toggle('body__noscroll')
-}
+// function toggleMenu() {
+//     let body = document.body
+//     if (links.classList.contains("active")) {
+//         body.classList.add("body__noscroll")
+//     } 
+// }
 
+links.forEach(function(link) {
+    link.addEventListener('click', function() {
+        let body = document.body
+        if (body.classList.contains("body__noscroll")) {
+            body.classList.remove("body__noscroll")
+        }
+      // Hide the sidebar by removing a class
+     navbarAbout.classList.remove("active");
+     hamburger.classList.remove("-menu-open");
+    });
+});
 
