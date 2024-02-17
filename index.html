@@ -12,7 +12,7 @@
     <div class="container">
             <nav class="navbar">
                 <div class="navbar__logo">
-                    <a href="">Soulsindeks</a>
+                    <b><a href="">Soulsindeks</a></b>
                 </div>
                 <div class="navbar__about">
                     <li class="navbar__item">
@@ -22,7 +22,10 @@
                         <b><a href="">Gallery</a></b>
                     </li>
                     <li class="navbar__item">
-                        <b><a href="">Contact</a></b>
+                        <b><a href="#footer">Contact</a></b>
+                    </li>
+                    <li class="navbar__item">
+                        <b><a href="./toDo/index.html">ToDo</a></b>
                     </li>
                 </div>
                 <div class="hamburger" onclick="toggleMenu()">
@@ -45,28 +48,28 @@
             <div class="hero">
                 <div class="hero__about">
                     <h1>This is Soulsindeks</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio necessitatibus corrupti in quas sunt officiis eius ullam magnam, aperiam ea. Nihil modi quam aliquam animi incidunt debitis laborum repudiandae.</p>
+                    <p>Soulsindeks is a clean and user-friendly web gallery designed to showcase images with simplicity and elegance. Its minimalist interface allows users to browse through curated collections effortlessly, whether on a desktop or mobile device. With intuitive navigation and customizable features, Soulsindeks offers a seamless viewing experience for anyone looking to enjoy visual content online..</p>
                     <div class="hero__button">
                         <button class="button__gallery">Gallery</button>
                         <button class="button__contact">Contact</button>
                     </div>
                 </div>
-                <div class="hero__img">
+                <!-- <div class="hero__img">
                     <img src="img/bonfire-dark-souls.gif" alt="bonfire" draggable="false">
-                </div>
+                </div> -->
             </div>
             <div class="content">
                 <div class="content__title">
                     <h1>Preview Gallery</h1>
                 </div>
                 <div class="content__img">
-                    <img src="img/moon.jpg" alt="mylovely1" draggable="false">
-                    <img src="img/moon.jpg" alt="mylovely2" draggable="false">
-                    <img src="img/moon.jpg" alt="mylovely3" draggable="false">
+                    <img class="image_content" src="img/image1.jpg" alt="mylovely1" draggable="false">
+                    <img class="image_content" src="img/moon.jpg" alt="mylovely2" draggable="false">
+                    <img class="image_content" src="img/image2.jpg" alt="mylovely3" draggable="false">
                 </div>
             </div>
 
-            <div class="footer">
+            <div id="footer" class="footer">
                 <div class="footer__container">
                     <div class="footer__title">
                         <h1>Soulsindeks</h1>
@@ -77,8 +80,9 @@
                         <a class="footer__email" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTFJZsQtqBfGbPhrmBmDVCZkjsltCmdBZWLWntWSmktJPfDPLRCsCNxgXmbfBBXcqgGqCW" target="_blank">soulsindeks@gmail.com</a>
                         <h1>Social Media</h1>
                         <div class="footer__icon">
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            <div class="inner">
+                                <a href="https://www.instagram.com/ducter77/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="footer__content">
